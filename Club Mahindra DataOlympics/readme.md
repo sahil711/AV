@@ -1,12 +1,11 @@
 VM Specs while working out these steps
-    Ram - 60 GB
+    Ram - 60 GB    
     CPU - 24 cores
     Min hard disk space - 50GB
 
 Environment Setup:
     Install Anaconda Version - 4.5.2
-    Create Virtual Environment with Python- 2.7.15
-        and do pip install -r requirement.txt to install all the dependencies 
+    Create Virtual Environment with Python- 2.7.15 and do pip install -r requirement.txt to install all the dependencies 
 
 Execution Steps:
 Run the following notebooks in order (Files generated from one might be used in notebooks that follows later)
