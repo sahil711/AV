@@ -1,4 +1,4 @@
-Our VM Specs while working out these steps
+VM Specs while working out these steps
     Ram - 60 GB
     CPU - 24 cores
     Min hard disk space - 50GB
