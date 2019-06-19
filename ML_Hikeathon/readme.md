@@ -1,3 +1,12 @@
+Link: https://datahack.analyticsvidhya.com/contest/hikeathon/
+
+Result:
+    
+    Private LB Score: 0.9409118988 (AUC) 
+    Private LB Rank: 1st
+    Public LB Score: 0.9415281974 (AUC) 
+    Public LB Rank: 1st
+
 Solution Overview:
 
 Our solution heavily depends on negative under-sampling, which means we use all positive examples (i.e., is_chat== 1) and down-sampled negative examples on model training. It discards about 95% of negative examples, but we didn't see much performance deterioration when we tested with our initial features. Moreover, we could get better performance when creating a submission by bagging ten predictors trained on ten sampled datasets created from different random seeds. This technique allowed us to experiment with multiple features while keeping LGB training time reasonable. 
