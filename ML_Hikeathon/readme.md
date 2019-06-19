@@ -31,7 +31,6 @@ Final Model:
 
     ● The final model is an ensemble of 10 LightGBM classifiers with each model fitted over a five-fold random stratified CV. 
     ● Each of the above model was built on a different subset of data with negative undersampling mentioned above. 
-    ● A little to no effort was made on tuning the hyper-parameters and more focus was on creating valuable/meaningful features. 
 
 
 Our VM Specs while working out these steps:
