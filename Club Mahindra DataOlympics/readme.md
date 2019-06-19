@@ -1,3 +1,12 @@
+Link: https://datahack.analyticsvidhya.com/contest/club-mahindra-dataolympics/
+
+Result:
+    
+    Private LB Score: 95.8128335535(100* RMSE) 
+    Private LB Rank: 1st
+    Public LB Score: 94.8817701988(100* RMSE) 
+    Public LB Rank: 1st
+    
 Feature Engineering: 
 
 ● In this dataset groupby variables added a lot of value. Intuition for this was based on seeing how the model extracted value from the raw data set i.e. without any engineered feature. On raw features, feature importance threw out member_id(encoded) and resort_id(encoded) as two of the most important features. 
