@@ -1,3 +1,31 @@
+Brief Approach:
+
+    Crux of the problem lied in creating feature such that you don’t introduce leak in them. Most of the
+    participants were struggling with this. Apart from this feature creation was the key. There was a lot of
+    scope to create features. I have my feature creation approach below.
+
+Which data-preprocessing / feature engineering ideas really worked?
+
+    For a given customer coupon pair, find all the items for that coupon and find the propensity of the
+    customer to buy that product using the historical transactions.Similar logic can be applied at a brand and
+    category level. Apart from propensity, we can also calculate a bunch of other variables for example,
+    what is the total amount spent,total discount availed etc.
+    Apart from customer coupon level, it tried similar approaches at only coupon and only campaign level.
+    For example, what is the probability that items under one coupon code use coupon discount(you can get
+    his by filtering historical transactions for the items belonging to one coupon)
+    To avoid leakage it was important to filter the historical data prior to the campaign date at a row level.
+    These variables were the most powerful ones for this problem and I got a clue from reading the problem
+    statement page multiple times. If you had read the last 4 lines of the problem statement, where in the
+    entire process was described in 3 points, the ideas would have clicked.
+
+Final Model Description:
+
+    My Final model is a linear blend of Catboost, Lightgbm and Xgboost built over 2 datasets. The only
+    difference between the two datasets was the number of features each had. One had more number of
+    statistics being calculated from the historical data.
+
+
+
 Steps to replicate:
 
 All the required packages are in requirements.txt file
