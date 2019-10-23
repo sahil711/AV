@@ -1,3 +1,12 @@
+Link:https://datahack.analyticsvidhya.com/contest/amexpert-2019-machine-learning-hackathon/
+
+Result:
+
+    Private LB Score: 0.9356513436 (AUC) 
+    Private LB Rank: 3rd
+    Public LB Score: 0.9430613521 (AUC) 
+    Public LB Rank: 8th
+
 Brief Approach:
 
     Crux of the problem lied in creating feature such that you don’t introduce leak in them. Most of the
